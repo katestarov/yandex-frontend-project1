@@ -442,14 +442,18 @@ p{
   flex-direction: row;
   align-items: flex-start;
   margin-bottom: 0px;
-  overflow: hidden; /* Добавьте это свойство */
-  height: 608px;
+  overflow: hidden;
 }
 
+
 .khan__book-pic{
-  margin-bottom: 0px;
+  object-fit: cover;
+  width: 620px;
+  height: 608px;
+  object-position: top left;
   margin-right: 48px;
 }
+
 
 .khan__buy-link{
   margin-bottom: 0px;
