@@ -34,6 +34,7 @@ p{
   display: flex;
   position: relative;
   align-items: center;
+  overflow: hidden;
   /* выше установили ограничения для секции */
 }
 
@@ -77,6 +78,18 @@ p{
   z-index: 8;
 }
 
+.rotation{
+  animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 .link {
   text-decoration: none; /* Убирает подчеркивание */
